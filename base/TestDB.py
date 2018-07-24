@@ -1,10 +1,12 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
+# connect DB
+
 import MySQLdb
 
 # 打开数据库连接
-db = MySQLdb.connect("localhost", "testuser", "test123", "TESTDB")
+db = MySQLdb.connect("localhost", "root", "root", "pythonDB")
 
 # 使用cursor()方法获取操作游标
 cursor = db.cursor()
